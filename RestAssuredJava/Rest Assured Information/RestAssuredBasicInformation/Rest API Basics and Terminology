@@ -1,0 +1,125 @@
+1) REST API Basics and Terminology
+
+A) End Point/Base URI(Uniform Resource Identifier):
+
+-> Address where API is hosted on the server.
+
+-> API sited there on the server.
+
+B) HTTP methods which are commonly used to communicate with Rest API's are:
+
+-> GET, POST, PUT, and DELETE : CRUD optimizations
+
+C: Create (POST)
+R: Retrieve (GET)
+U: Update (PUT)
+D: Delete (DELETE)
+
+1) GET:
+
+-> The GET method is used to extract information from the given server using a given URI (Uniform Resource Identifier).
+
+-> While using GET request, it should only extract data and should have no other effect on the data.
+
+-> No Payload/Body required.
+
+-> We can send input data in GET using 'Query' Parameters.
+
+2) POST
+
+-> A POST request is used to send data to the server, for example, customer information, file upload etc. using HTML
+   forms.
+
+-> Using Form Parameters/Body/PayLoad
+
+3) PUT
+
+-> It replace all current representations of the target resources with the uploaded content.
+
+4) DELETE
+
+-> It removes all current representation of the target resource given by the URI.
+
+************************************************************************************************************************
+
+1) Resources:
+
+-> Resources basically represents an API or Collection which can be accessed from the server.
+
+e.g.
+
+-> google.com/maps (Here 'google.com' is the server & base URL, here all API's stored and 'maps' is the resources and
+   it is typed to the 'Maps' i.e. it will redirects to Maps)
+
+-> google.com/search (Here 'google.com' is the server & base URL, 'search' is the resources and it is typed to the
+   'Search' i.e. it will redirects to Search)
+
+-> google.com/images (Here 'google.com' is the server & base URL, 'images' is the resources and it is typed to the
+   'Images' i.e. it will redirects to Images)
+
+-> google.com/docs (Here 'google.com' is the server & base URL, 'docs' is the resources and it is typed to the
+   'Docs' i.e. it will redirects to Docs)
+
+2) Parameters:
+
+-> Parameters are optional but if the API is designed in such way it needs additional information then we need to pass
+   the parameters to the API.
+
+-> Parameter depends on API contract how the API designed.
+
+-> There are two types of parameters:
+
+A) Path Parameters:
+
+-> it is an sub-resource. It keeps point on the specific resource.
+
+-> Path parameter are variable parts of a URL path.
+
+-> Path parameter are typically used to point to a specific resource within a collection, such as a used identified
+   by ID.
+
+-> It is just like URL as there is no any filter in the path parameter.
+
+-> e.g.
+
+-> https://www.google.com/Images/11233454
+
+-> https://www.google.com/docs/112
+
+-> https://www.amazon.com/orders/112
+
+B) Query Parameters:
+
+-> Query Parameter is used to sort/filter the resources.
+
+-> Query Parameter is identified with ?
+
+-> After the ? there is parameter name and then its value
+
+-> Each and every Query Parameter separate by &
+
+-> e.g.
+
+-> https://amazon.com/orders?sort_by=2/20/2025
+
+-> https://www.google.com/search?q=newyork&aqs=chrome..69i57j69i59.2821j0j9&sourceid=chrome&ie=UTF-8
+
+https://www.google.com/ - Base URL
+
+search - Resource
+
+?q=newyork&aqs=chrome..69i57j69i59.2821j0j9&sourceid=chrome&ie=UTF-8 - Query Parameter
+
+3) Headers/Cookies:
+
+-> Headers represent the meta-data associated with the API request and response.
+
+-> In layman terms, we were sending Additional details to the API to process our request.
+
+-> Sometimes they are also play key role while sending request and getting response from API
+
+-> Example: Authorization Details
+
+4) End Point Request URL can be Constructed as below:
+
+-> Base URL/resource/(Path/Query)Parameters

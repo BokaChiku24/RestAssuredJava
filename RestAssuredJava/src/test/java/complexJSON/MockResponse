@@ -1,0 +1,4 @@
+Mock Response - It is nothing but dummy response used to automate Rest Assured API
+
+While working in the agile sometimes API are not ready but response/schema is know how will the output looks like.
+Take that response/schema as an dummy response to write test cases and automate them.

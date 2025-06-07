@@ -1,0 +1,36 @@
+{
+  "dashboard": {
+    "purchaseAmount": 1162,
+    "website": "rahulshettyacademy.com"
+  },
+  "courses": [
+    {
+      "title": "Selenium Python",
+      "price": 50,
+      "copies": 6
+    },
+    {
+      "title": "Cypress",
+      "price": 40,
+      "copies": 4
+    },
+    {
+      "title": "RPA",
+      "price": 45,
+      "copies": 10
+    },
+    {
+      "title": "Appium",
+      "price": 36,
+      "copies": 7
+    }
+  ]
+}
+
+
+1. Print number of courses return by API
+2. Print purchase amount
+3. Print title of the first course
+4. Print all course title and their price
+5. Print no of copies sold by RPA course
+6. Verify sum of all course price matches with purchase amount

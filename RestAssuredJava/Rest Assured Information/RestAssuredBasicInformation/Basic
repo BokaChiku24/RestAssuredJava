@@ -1,0 +1,82 @@
+A) Basic
+
+-> API Automation with Rest Assured (Java). Rest Assured is the library in Java which helps to automate the API testing.
+
+-> Walkthrough = API testing using Postman Tool + API Automation testing with Rest Assured (Java) + API Automation
+   Framework Development + Core java Basics
+
+B) Where we need API
+
+-> If front end is design in another language e.g. Angular - TypeScript and backend is design in Java. Here their is
+   design problem. To overcome with this design problem and to communicate with each other Frontend
+   and Backend we need API
+
+-> If third party application/website want to access our database to show on their application/website in this case we
+   need an API to achieve this integration.
+
+C) Where we not need API:
+
+-> If the Frontend and Backend design with same programming language and their is no any design issues to communicate
+   Frontend and Backend then in this case no API need for that project only.
+
+D) How API works:
+
+1) When there is design issue e.g. Frontend in other language and Backend is in other language:
+
+-> API acts as an interface between the client (Frontend) and server (Backend).
+-> API is also called as middle tier layer.
+-> API is independent of any language.
+-> Whenever user enters data from Frontend then Frontend captures the data and send it to the API. While sending the
+   data to API it use HTTP Request Protocol. HTTP protocol is independent of any language. It is not matter what
+   language we have used on Frontend. It will get all details and share it via HTTP request to the API.
+   API send the request to the method which is written in the Backend.
+-> Frontend send the details to the API in the format of either JSON or XML. Both JSON and XML are independent of any
+   language. Every programming language has some libraries to parse these JSON or XML files. JSON and XML files
+   are representation of data in specific format.
+-> API send the data to the method and method works on it in the Backend. Method gets the data and send it back to the
+   API and API send the response through HTTP Response to the Frontend. Frontend parse that response data i.e. JSON or
+   XML and display that data to the client.
+-> There is no interaction between Frontend and Backend. Middle layer API handles this.
+-> Create an API for the method and when somebody call that API then it start it's working.
+
+2) When there is third party application/website and want to access our database to show on their application/website:
+
+-> Other project guys will not expose their whole code to the third party application/website.
+-> They will design an API fro the specific method and expose that API to the third party application/website.
+-> There is no code in the API. Frontend take data in JSON and XML format send it through HTTP request to the API and
+   API send it to the method and method works on it and gets required data from database, Backend method send the
+   details back to the API and API send that JSON or XML back to the Frontend. Frontend parse JSON or XML and show
+   data to the client.
+
+E) What is an API:
+
+-> API is an application programming interface (API) is an interface or communication protocol between a client and
+   server. intended to simplify the building of client-side software.
+
+-> API is also works as a 'Contract' between the client and the server, such that if the client makes a request in a
+   specific format, it will always gets a response in a specific format or initiate a defined action.
+
+-> An API may be for a web-based system, operation system, database system, computer hardware, or software library.
+
+F) REST API:
+
+-> REST process some rules and regulation to create an REST API.
+
+-> To create REST API everyone need s to follow those rules and regulation to follow REST API's umbrella.
+
+-> REST has also authorization and authentication but it is light wait protocol.
+
+-> REST is flexible way to code.
+
+-> REST is easy to build and maintain.
+
+-> REST API testing is very necessary because third party application/website needs to verify whether it is getting
+   actual result from server or not. Test the API to see are we getting proper response or no.
+
+G) SOAP API Or SOAP Web Services:
+
+-> Most of the legacy services are defined on the SOAP.
+
+-> SOAP API has some different rules and regulations.
+
+-> SOAP has so many restrictions and conditions. It has tight authorization and authentication to communicate with API.
