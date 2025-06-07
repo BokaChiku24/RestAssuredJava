@@ -1,0 +1,4 @@
+How to send an attachment through REST API?
+
+Example:
+Jira API is used to create a bug and attach failed screenshot to that bug through REST API.
