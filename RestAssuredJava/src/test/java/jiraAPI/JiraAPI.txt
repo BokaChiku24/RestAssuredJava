@@ -2,3 +2,28 @@ How to send an attachment through REST API?
 
 Example:
 Jira API is used to create a bug and attach failed screenshot to that bug through REST API.
+
+In some companies if the test fails they create bug or defect by using REST API.
+
+1) Open the 'Jira Cloud API' documentation from Google
+2) Go to the 'Ad-hoc API calls' and hit on the 'Basic auth for REST APIs' 
+3) Then Go to the Authentication and Authorization and open section 'Supply basic auth headers'
+4) Hit on the 'Atlassian Account.' 
+5) Hit on the 'Generate API' button
+6) Enter API name and Expiration date
+7) Copy the generated API
+   Token: ATATT3xFfGF0sqXWtwY02UgMyb08q1T5gKa7LoY8tzWYbbcZb7XfIJzUxMISwT5msIw5z0Npsyf5jJ4AvXKFHiAQk9TaPV76YK0hu-CXcw63NA8jMrLjI56WwvFi03h5ZuMlkdX_vHcHxt1eziF05kUHyDe8SmOXQGTiRC0ocU4IASvVKbmwDVQ=14DD74FB
+8) Build a string of the form useremail:api_token
+   i.e. kunal24chavan@gmail.com:ATATT3xFfGF0sqXWtwY02UgMyb08q1T5gKa7LoY8tzWYbbcZb7XfIJzUxMISwT5msIw5z0Npsyf5jJ4AvXKFHiAQk9TaPV76YK0hu-CXcw63NA8jMrLjI56WwvFi03h5ZuMlkdX_vHcHxt1eziF05kUHyDe8SmOXQGTiRC0ocU4IASvVKbmwDVQ=14DD74FB
+9) BASE64 encode the string
+   Mac command: echo -n "user@example.com:api_token_string" | base64
+   
+   echo -n "kunal24chavan@gmail.com:ATATT3xFfGF0sqXWtwY02UgMyb08q1T5gKa7LoY8tzWYbbcZb7XfIJzUxMISwT5msIw5z0Npsyf5jJ4AvXKFHiAQk9TaPV76YK0hu-CXcw63NA8jMrLjI56WwvFi03h5ZuMlkdX_vHcHxt1eziF05kUHyDe8SmOXQGTiRC0ocU4IASvVKbmwDVQ=14DD74FB" | base64
+10) Open the terminal and paste the below command hit on the enter
+
+   
+11) Copy the output and pass it on the header
+   
+    Output: a3VuYWwyNGNoYXZhbkBnbWFpbC5jb206QVRBVFQzeEZmR0Ywc3FYV3R3WTAyVWdNeWIwOHExVDVnS2E3TG9ZOHR6V1liYmNaYjdYZklKelV4TUlTd1Q1bXNJdzV6ME5wc3lmNWpKNEF2WEtGSGlBUWs5VGFQVjc2WUswaHUtQ1hjdzYzTkE4ak1yTGpJNTZXd3ZGaTAzaDVadU1sa2RYX3ZIY0h4dDFlemlGMDVrVUh5RGU4U21PWFFHVGlSQzBvY1U0SUFTdlZLYm13RFZRPTE0REQ3NEZC
+    
+12) To create a bug go to the issue section. In Jira for all Bug, Defect, Story, Task it falls under the Issue

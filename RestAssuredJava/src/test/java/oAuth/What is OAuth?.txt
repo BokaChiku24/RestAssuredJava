@@ -1,0 +1,28 @@
+1) What is OAuth?
+
+-> OAuth comes in a picture when there is API taking within server to server. 
+-> E.g. There is back login page. User provide username and password and home screen fetch all details overview. 
+   now overview details comes from different API's and those API's needs authentication. 
+   Good design is don't provider user name and password while talking to other API within same system. 
+   Providing user sensitive information breach privacy and not appropriate approach to design
+-> OAuth is a framework and it is pattern in the backend to communicate multiple API with each other
+-> OAuth has exclusive authorization server which provider authentication to other server. 
+-> Duty of the exclusive authorization server to provide access token to other internal API
+-> When user login then internally it goes to OAuth exclusive authorization server. It asks for token and OAuth exclusive authorization server
+   provides token to communicate within internal API
+-> OAuth Grand Authorization Types:
+A) Client Credentials
+B) Password
+C) Authorization Code
+By using these three methods Authorization Server knows who you are. And if you are valid user then it grand access to other resources / API's
+-> However most of companies user 
+A) Client Credentials
+B) Password
+To talk authorization server and to get the access token back
+
+A) Client Credentials: When the user login with username and password and with on those information developer take client ID and client secret as parameter 
+   and pass to the Authorization server for token access
+   If user is valid then token generate and pass to unlock internal other API's
+
+B) Password: When the user login and password and with on these information developer take client username and password as parameter and pass to the 
+   Authorization server for token access

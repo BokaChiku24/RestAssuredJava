@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advanceDynamicPayload.StaticJSON">
+      <class name="jiraAPI.CreateBug">
         <methods>
-          <include name="staticJSONTest"/>
+          <include name="createBug"/>
+          <include name="addAttachment"/>
         </methods>
-      </class> <!-- advanceDynamicPayload.StaticJSON -->
+      </class> <!-- jiraAPI.CreateBug -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
